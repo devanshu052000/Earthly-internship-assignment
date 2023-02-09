@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+body{
+  margin: 0;
+  background-color: #0E1010;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: #DED4CB;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_bar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 200px 0;
+}
+
+.nav_title{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo{
+  width: 100px;
+  height: 100%;
+}
+
+.title{
+  line-height: 100px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav_menu{
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  line-height: 100px;
+  padding-right: 120px;
+}
+
+.nav_item{
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav_item_content{
+  color: #0E1010;
+  margin: 0;
+}
+
+.nav_item_content a{
+  color: #0E1010;
+  padding: 10px 30px;
+}
+
+.cart{
+  display: flex;
+  flex-direction: row;
+}
+
+.cart_icon{
+  width: 30px;
+  height: 100%;
+}
+
+.cart_label{
+  color: #0E1010;
+  line-height: 60px;
+  padding: 0 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.green{
+  width: 24vw;
+  height: auto;
+  border-radius: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 190px;
+}
+
+.main{
+  margin-top: 100px;
+}
+
+.tag{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 200px;
+  font-family: 'Marcellus', serif;
+}
+
+.leaves{
+  width: 280px;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.tagline1{
+  font-size: 90px;
+  background: -webkit-linear-gradient(left, #493D31 , ##8f8718);
+   background: -o-linear-gradient(right, #493D31, #8f8718);
+   background: -moz-linear-gradient(right, #493D31, #8f8718);
+   background: linear-gradient(to right, #493D31 , #8f8718);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline{
+  font-size: 90px;
+  color: #493D31;
+}
+
+.and{
+  margin: 0;
+  margin-top: -150px;
+  font-size: 200px;
+}
+
+.tag1{
+  margin-top: -60px;
+  text-align: right;
+}
+
+.product{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px;
+  background-color: #493D31;
+  padding: 50px;
+}
+
+.product_image{
+  width: 900px;
+  height: 100%;
+}
+
+.product_shop{
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.product_shop h1{
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-41 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  margin-top: 15px;
+}
+
+.button-41:hover {
+  background: #00bd68;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-top: 15px;
+}
+
+.icon{
+  margin: 20px;
+  width: 25px;
+  height: 100%;
+}
+
+.product_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px 150px;
+}
+
+.product_item_img{
+  width: 800px;
+  height: 100%;
+}
+
+.product_name{
+  font-size: 100px;
+  color: #493D31;
+  font-family: 'Marcellus', serif;
+}
+
+.pn2{
+  text-align: right;
 }
